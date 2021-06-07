@@ -13,6 +13,7 @@ public class apps {
         double subtotal=price1+price2+price3;
         double tax=(subtotal*0.055);
         double finaltotal=subtotal+tax;
+        finaltotal=Math.round(finaltotal*100.0)/100.0;
 
         System.out.print("Subtotal: $"+subtotal+"\nTax: $"+tax+"\ntotal: $"+String.format("%.2f", finaltotal));
 
